@@ -8,16 +8,16 @@ function NavBar() {
       <nav className="p-2">
         <ul className="flex flex-row gap-2">
           <li>
-            <a href="#">Home</a>
+            <a className="hover:underline" href="#">Home</a>
           </li>
           <li>
-            <a href="#">Products</a>
+            <a className="hover:underline" href="#">Products</a>
           </li>
           <li>
-            <a href="#">About us</a>
+            <a className="hover:underline" href="#">About us</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a className="hover:underline" href="#">Contact</a>
           </li>
         </ul>
       </nav>
