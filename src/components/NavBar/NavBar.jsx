@@ -1,9 +1,9 @@
 import CartWidget from "../CartWidget/CartWidget";
 const NavBar = () => {
   return (
-    <header className="flex flex-row justify-between">
+    <header className="flex flex-row justify-between border-y-4">
       <div className="flex flex-row p-1 gap-1">
-        <h1 className="text-4xl">Tía Rosita</h1>
+        <h1 className="text-5xl">Tía Rosita</h1>
       </div>
       <nav className="p-2">
         <section>
