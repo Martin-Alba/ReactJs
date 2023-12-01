@@ -1,28 +1,43 @@
-function NavBar() {
+import CartWidget from "../CartWidget/CartWidget";
+const NavBar = () => {
   return (
     <header className="flex flex-row justify-between">
       <div className="flex flex-row p-1 gap-1">
         <h1 className="text-4xl">Tía Rosita</h1>
-        <img className="w-12" src="https://i.imgur.com/igU59U2.png" alt="brand-name" />
       </div>
       <nav className="p-2">
-        <ul className="flex flex-row gap-2">
-          <li>
-            <a className="hover:underline" href="#">Home</a>
-          </li>
-          <li>
-            <a className="hover:underline" href="#">Products</a>
-          </li>
-          <li>
-            <a className="hover:underline" href="#">About us</a>
-          </li>
-          <li>
-            <a className="hover:underline" href="#">Contact</a>
-          </li>
-        </ul>
+        <section>
+          <ul className="flex flex-row gap-2">
+            <li>
+              <a className="hover:underline" href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="hover:underline" href="#">
+                Products
+              </a>
+            </li>
+            <li>
+              <a className="hover:underline" href="#">
+                About us
+              </a>
+            </li>
+            <li>
+              <a className="hover:underline" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div className="flex justify-end ">
+            <CartWidget />
+          </div>
+        </section>
       </nav>
     </header>
   );
-}
+};
 
 export default NavBar;
