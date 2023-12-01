@@ -2,7 +2,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer.
 import NavBar from "./components/NavBar/NavBar.jsx";
 
 const App = () => {
-  const greeting = "Bienvenido a a la tienda virtual de Tia Rosita";
+  const greeting = "Bienvenido a la tienda virtual de Tia Rosita";
   return (
     <div className="max-w-[1200px] mx-auto">
       <NavBar />
