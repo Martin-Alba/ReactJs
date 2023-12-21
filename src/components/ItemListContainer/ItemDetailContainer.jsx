@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getProducts } from "../../apis/fake-store";
+import { getProductById } from "../../apis/fake-store";
 import AddToCart from "../Cart/AddToCart";
 import {
   Card,
@@ -15,10 +15,7 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const products = await getProducts();
-      const foundProduct = products.find(
-        (product) => product.id === parseInt(id, 10)
-      );
+      const foundProduct = await getProductById(id);
       setProduct(foundProduct);
     };
 
@@ -26,15 +23,15 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   if (!product) {
-    return <p>Product not found.</p>;
+    return <p>Loading...</p>;
   }
 
-  const { title, description, price, image, category } = product;
+  const { title, description, price, image } = product;
 
   return (
     <Card
       key={id}
-      className="justify-between mt-6 w-96 bg-slate-50 border border-slate-100 rounded-lg p-4 m-2 shadow-xl"
+      className="justify-between mt-6 w-96 bg-slate-50 border border-slate-100 rounded-lg p-4 m-2 shadow-xl -z-10"
     >
       <CardBody>
         <Typography

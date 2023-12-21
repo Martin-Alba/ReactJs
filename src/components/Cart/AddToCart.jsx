@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@material-tailwind/react";
 
-const addToCart = () => {
+const AddToCart = () => {
   const [count, setCount] = useState(0);
 
   const addToCart = () => {
@@ -48,4 +48,4 @@ const addToCart = () => {
   );
 };
 
-export default addToCart;
+export default AddToCart;

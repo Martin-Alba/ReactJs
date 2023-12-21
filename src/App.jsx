@@ -4,7 +4,6 @@ import NavBar from "./components/NavBar/NavBar.jsx";
 import About from "./components/About/About.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Cart from "./components/Cart/Cart.jsx";
-import ProductId from "./components/ProductId/ProductId.jsx";
 import ItemDetailContainer from "./components/ItemListContainer/ItemDetailContainer.jsx";
 
 const App = () => {
@@ -20,7 +19,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/products" element={<ItemListContainer />} />
-          <Route path="/product/:id" element={<ProductId />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
         </Routes>
       </div>
