@@ -3,9 +3,9 @@ import { IconSearch } from "@tabler/icons-react";
 const NavBarSearch = () => {
   return (
     <section className="w-[300px]">
-      <form action="" className="flex flex-row bg-slate-200 rounded-md">
+      <form action="" className="flex flex-row bg-slate-200 rounded-md shadow-xl">
         <div className="flex items-center">
-          <IconSearch size={18} className="mr-1 opacity-25 " />
+          <IconSearch size={18} className="mr-1 opacity-25" />
         </div>
         <div>
           <input

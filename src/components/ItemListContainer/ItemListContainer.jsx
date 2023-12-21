@@ -9,8 +9,6 @@ const ItemListContainer = ({ greeting }) => {
     getProducts().then((products) => setProducts(products));
   }, []);
 
-  console.log(products)
-
   return (
     <div>
       <main className="text-center text-3xl mt-32">{greeting}</main>

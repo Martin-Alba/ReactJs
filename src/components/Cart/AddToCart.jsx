@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@material-tailwind/react";
 
-const ItemCount = () => {
+const addToCart = () => {
   const [count, setCount] = useState(0);
 
   const addToCart = () => {
@@ -23,22 +23,22 @@ const ItemCount = () => {
   };
 
   return (
-    <div>
+    <div className="flex justify-center">
       <Button
-        className="bg-gradient-to-r from-green-700 to-green-400 w-10 p-1 mr-1"
+        className="bg-gradient-to-r from-green-700 to-green-400 w-10 h-10 p-1 mr-1 text-lg"
         onClick={increment}
       >
         {" "}
         +{" "}
       </Button>
       <Button
-        className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 text-white p-1 m-1"
+        className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 text-white h-10 p-1"
         onClick={addToCart}
       >
         Add to Cart {count}
       </Button>
       <Button
-        className="bg-gradient-to-r from-red-400 to-red-700 w-10 p-1 m-1"
+        className="bg-gradient-to-r from-red-400 to-red-700 w-10 h-10 p-1 ml-1 text-lg"
         onClick={decrement}
       >
         {" "}
@@ -48,4 +48,4 @@ const ItemCount = () => {
   );
 };
 
-export default ItemCount;
+export default addToCart;
