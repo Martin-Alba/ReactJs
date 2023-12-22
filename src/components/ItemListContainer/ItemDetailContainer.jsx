@@ -7,6 +7,7 @@ import {
   CardBody,
   CardFooter,
   Typography,
+  Spinner,
 } from "@material-tailwind/react";
 
 const ItemDetailContainer = () => {
@@ -23,7 +24,11 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   if (!product) {
-    return <p>Loading...</p>;
+    return (
+      <div className="flex justify-center items-center w-auto h-[100vh]">
+        <Spinner color="pink" className="w-16 h-16" />
+      </div>
+    );
   }
 
   const { title, description, price, image } = product;
@@ -44,7 +49,11 @@ const ItemDetailContainer = () => {
           </Typography>
           <Typography>
             <span className="flex justify-center">
-              <img src={`${image}`} alt="imagen-producto" className="w-48 m-5" />
+              <img
+                src={`${image}`}
+                alt="imagen-producto"
+                className="w-48 m-5"
+              />
             </span>
             {description}
           </Typography>
