@@ -16,7 +16,7 @@ const NavBarMenu = () => {
   return (
     <div className="relative z-20">
       <Menu className>
-        <MenuButton className="flex w-32 bg-white shadow-xl rounded-b-lg">
+        <MenuButton className="flex w-32 bg-white hover:shadow-xl rounded-b-lg hover:font-bold hover:underline decoration-pink-500">
           Categories
         </MenuButton>
         <MenuList className="w-auto bg-white shadow-xl rounded-b-lg p-2">
