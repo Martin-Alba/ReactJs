@@ -1,1 +1,1 @@
-![Demostración del e-commers](https://i.imgur.com/s01qsOA.mp4)
+![Demostración del e-commers](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3R2ZTVxcm1nOGxqZnU1Zjc4YnFiNGY3a2JxeHp5bG80N2FtNWV4cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yOmqdek7bW0JYWULXF/giphy.gif)
