@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
 import NavBar from "./components/NavBar/NavBar.jsx";
-import About from "./components/About/About.jsx";
-import Contact from "./components/Contact/Contact.jsx";
 import Cart from "./components/Cart/Cart.jsx";
 import ItemDetailContainer from "./components/ItemListContainer/ItemDetailContainer.jsx";
 
@@ -15,11 +13,9 @@ const App = () => {
         <Routes>
           <Route path="*" element={<ItemListContainer greeting={greeting} />} />
           <Route path="/" element={<ItemListContainer greeting={greeting} />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/products" element={<ItemListContainer />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="/category/:category" element={<ItemListContainer />} />
         </Routes>
       </div>
     </BrowserRouter>
